@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mmm | ESC Command Center</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" aria-label="Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <span class="title">Dashboard</span>
+    </div>
+
+    <div class="topbar-center">
+      <span class="logo-3m">mmm</span>
+      <span class="divider"></span>
+      <span class="center-title">ESC Command Center</span>
+    </div>
+
+    <div class="topbar-right">
+      <button class="icon-btn" aria-label="Search">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+      <button class="icon-btn bell-btn" aria-label="Notifications">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="badge">3</span>
+      </button>
+      <img class="avatar" src="assets/avatar.svg" alt="User avatar">
+    </div>
+  </header>
+
+  <nav class="tabbar">
+    <div class="tabs">
+      <button class="tab active" data-view="scorecard">Scorecard Overview</button>
+      <button class="tab" data-view="planner">Daily Planner</button>
+    </div>
+    <button class="user-dropdown">
+      <span class="material-symbols-outlined owner-icon dropdown-icon">account_tree</span>
+      <span>Nick Skwiat</span>
+      <span class="material-symbols-outlined chevron">expand_more</span>
+    </button>
+  </nav>
+
+  <div class="workspace">
+  <main class="content" id="scorecardView">
+    <div class="grid">
+
+      <!-- Card 1 -->
+      <section class="card-unit enter" data-card-id="1" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            <span class="badge badge-amber"><span class="material-symbols-outlined warn-icon">warning</span>Escalated</span>
+          </div>
+          <div class="dollar-value red">$120M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change up"><span class="material-symbols-outlined arrow-icon">arrow_drop_up</span> 40M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 5M</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red selected-red"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            Nick Skwiat
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Action</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Action">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Decision<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Decision">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Inform</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Inform">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Recognition</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Recognition">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 2 -->
+      <section class="card-unit enter" data-card-id="2" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            <span class="badge badge-amber"><span class="material-symbols-outlined warn-icon">warning</span>Status</span>
+          </div>
+          <div class="dollar-value red">$120M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change up"><span class="material-symbols-outlined arrow-icon">arrow_drop_up</span> Ch.</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> Ch.</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red selected-red"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            John Doe
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Button</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Button<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Button</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Button</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 3 -->
+      <section class="card-unit enter" data-card-id="3" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            <span class="badge badge-amber"><span class="material-symbols-outlined warn-icon">warning</span>Escalated</span>
+          </div>
+          <div class="dollar-value red">$120M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change up"><span class="material-symbols-outlined arrow-icon">arrow_drop_up</span> 40M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 5M</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red selected-red"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            John Doe
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Action</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Action">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Decision<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Decision">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Inform</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Inform">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Button</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 4 -->
+      <section class="card-unit enter" data-card-id="4" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            
+          </div>
+          <div class="dollar-value dark">$70M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 10M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 5M</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar green selected-green"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            Nick Skwiat
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Action</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Action">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Decision<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Decision">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Inform</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Inform">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Recognition</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Recognition">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 5 -->
+      <section class="card-unit enter" data-card-id="5" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            
+          </div>
+          <div class="dollar-value dark">$70M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 10M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> Ch.</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar green selected-green"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            Nick Skwiat
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Button</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Button<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Button</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Button</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Button">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 6 -->
+      <section class="card-unit enter" data-card-id="6" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            
+          </div>
+          <div class="dollar-value dark">$70M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 10M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 5M</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar green selected-green"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            Nick Skwiat
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Action</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Action">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Decision<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Decision">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Inform</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Inform">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Recognition</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Recognition">add</button></div>
+        </div>
+      </section>
+
+      <!-- Card 7 -->
+      <section class="card-unit enter" data-card-id="7" tabindex="0" role="button" aria-label="Open Aged Backlog details">
+        <div class="card-stats">
+          <div class="stats-header">
+            <span class="label-group">Aged Backlog <span class="material-symbols-outlined info-icon">info</span></span>
+            
+          </div>
+          <div class="dollar-value dark">$70M</div>
+          <div class="target-row">
+            <span>Target</span><span class="target-value">$80M</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 10M</span>
+          </div>
+          <div class="weekly-row">
+            <span>Weekly Record</span>
+            <span class="change down"><span class="material-symbols-outlined arrow-icon">arrow_drop_down</span> 5M</span>
+          </div>
+          <div class="bars">
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar red"></span>
+            <span class="bar green"></span>
+            <span class="bar green"></span>
+            <span class="bar green selected-green"></span>
+          </div>
+          <button class="assignee-chip">
+            <span class="material-symbols-outlined owner-icon">account_tree</span>
+            Nick Skwiat
+          </button>
+        </div>
+        <div class="card-panel">
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">bolt</span><span class="label-text">Action</span></span><span class="count orange">2</span><button class="plus-btn material-symbols-outlined" aria-label="Add Action">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">chat_bubble</span><span class="label-text with-dot">Decision<span class="dot"></span></span></span><span class="count">3</span><button class="plus-btn material-symbols-outlined" aria-label="Add Decision">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">mic</span><span class="label-text">Inform</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Inform">add</button></div>
+          <div class="panel-row"><span class="left"><span class="material-symbols-outlined picon">star</span><span class="label-text">Recognition</span></span><span class="count">5</span><button class="plus-btn material-symbols-outlined" aria-label="Add Recognition">add</button></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <main class="content planner-content" id="plannerView" hidden>
+
+    <nav class="planner-tabbar" id="plannerTabbar" role="tablist" aria-label="Daily planner sections">
+      <button class="planner-tab active" type="button" role="tab" aria-selected="true" data-planner-tab="inform">Inform</button>
+      <span class="planner-tab-divider" aria-hidden="true"></span>
+      <button class="planner-tab" type="button" role="tab" aria-selected="false" data-planner-tab="decisions">Decisions</button>
+      <span class="planner-tab-divider" aria-hidden="true"></span>
+      <button class="planner-tab" type="button" role="tab" aria-selected="false" data-planner-tab="tasks">Tasks</button>
+      <span class="planner-tab-divider" aria-hidden="true"></span>
+      <button class="planner-tab" type="button" role="tab" aria-selected="false" data-planner-tab="drafts">Drafts</button>
+    </nav>
+
+    <div class="planner-panel" data-planner-panel="inform">
+      <section class="briefing-section">
+        <div class="briefing-section-head">
+          <div class="briefing-heading">
+            <h1 class="briefing-title">Today's Briefings<span class="briefing-count" id="briefingCount"></span></h1>
+          </div>
+        </div>
+
+        <div id="briefingStage">
+          <div class="briefing-version" id="versionA" data-version-panel="a"></div>
+        </div>
+
+        <div class="inform-archive-section">
+          <div class="planner-section-head">
+            <h2 class="planner-section-title">Flags &amp; Archive</h2>
+          </div>
+          <div class="seg-toggle" id="informArchiveToggle">
+            <button class="seg-btn active" type="button" data-mode="flags">Flags</button>
+            <button class="seg-btn" type="button" data-mode="archive">Archive</button>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table" id="informArchiveTable"></table>
+          </div>
+          <div id="informArchivePagination"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="planner-panel" data-planner-panel="decisions" hidden>
+      <section class="planner-section">
+        <div class="planner-section-head">
+          <h2 class="planner-section-title">Decisions to Approve<span class="briefing-count" id="decisionCount"></span></h2>
+        </div>
+        <div id="decisionStage"></div>
+      </section>
+    </div>
+
+    <div class="planner-panel" data-planner-panel="tasks" hidden>
+      <section class="planner-section">
+        <div class="planner-section-head">
+          <h2 class="planner-section-title">Actions to Perform<span class="briefing-count" id="actionsCount"></span></h2>
+        </div>
+        <div id="actionsStage"></div>
+      </section>
+    </div>
+
+    <div class="planner-panel" data-planner-panel="drafts" hidden>
+      <section class="planner-section">
+        <div class="planner-section-head">
+          <h2 class="planner-section-title">Pending Draft Tasks<span class="briefing-count" id="draftsCount"></span></h2>
+        </div>
+        <div id="draftsStage"></div>
+      </section>
+    </div>
+
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal-box" id="modalBox" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <span class="modal-title" id="modalTitle"></span>
+        <button class="dp-close" id="modalClose" aria-label="Close">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter" hidden></div>
+    </div>
+  </div>
+
+  <div class="snackbar" id="snackbar" role="status" aria-live="polite" hidden>
+    <span class="material-symbols-outlined snackbar-icon">task_alt</span>
+    <span class="snackbar-text" id="snackbarText"></span>
+    <button class="snackbar-link" id="snackbarAction" type="button">Click here to review</button>
+    <button class="snackbar-close" id="snackbarClose" type="button" aria-label="Dismiss">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+
+  <aside class="details-panel" id="detailsPanel" aria-hidden="true">
+    <div class="panel-inner">
+    <div id="kpiOverviewContent">
+
+      <div class="dp-header">
+        <div class="dp-header-top">
+          <span class="dp-title">
+            <span id="dpTitle">Aged Backlog</span>
+            <span class="material-symbols-outlined info-icon">info</span>
+          </span>
+          <button class="dp-close" id="dpClose" aria-label="Close details panel">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="dp-value-row">
+          <span class="dp-value" id="dpValue">$120M</span>
+          <span class="badge badge-amber" id="dpBadge">
+            <span class="material-symbols-outlined warn-icon">warning</span>
+            <span id="dpBadgeText">Escalated</span>
+          </span>
+          <span class="dp-target-inline">
+            Target <b id="dpTarget">$80M</b>
+            <span class="change" id="dpVariance">&#9650; $40M</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="dp-section dp-chart-section">
+        <div class="chart-legend" id="chartLegend"></div>
+        <div class="chart-wrap">
+          <svg class="trend-chart" id="trendChart" viewBox="0 0 380 190" preserveAspectRatio="none"></svg>
+          <div class="chart-tooltip" id="chartTooltip"></div>
+        </div>
+      </div>
+
+      <nav class="dp-subtabs" id="dpSubtabs" role="tablist" aria-label="KPI detail sections">
+        <button class="dp-subtab active" type="button" role="tab" aria-selected="true" data-subtab="dimensions">Dimensions</button>
+        <button class="dp-subtab" type="button" role="tab" aria-selected="false" data-subtab="tasks">Tasks</button>
+        <button class="dp-subtab" type="button" role="tab" aria-selected="false" data-subtab="recovery">Recovery Plan</button>
+        <button class="dp-subtab" type="button" role="tab" aria-selected="false" data-subtab="alerts">Alerts</button>
+      </nav>
+
+      <div class="dp-subtab-panel" data-subtab-panel="dimensions">
+        <div class="seg-toggle" id="dimensionToggle">
+          <button class="seg-btn active" type="button" data-mode="bg">BG</button>
+          <button class="seg-btn" type="button" data-mode="area">Area</button>
+          <button class="seg-btn" type="button" data-mode="both">Both</button>
+        </div>
+        <div class="dim-list" id="dimensionList"></div>
+      </div>
+
+      <div class="dp-subtab-panel" data-subtab-panel="tasks" hidden>
+        <div class="seg-toggle" id="taskCategoryToggle">
+          <button class="seg-btn active" type="button" data-mode="action">Actions</button>
+          <button class="seg-btn" type="button" data-mode="decision">Decision</button>
+          <button class="seg-btn" type="button" data-mode="inform">Inform</button>
+          <button class="seg-btn" type="button" data-mode="recognition">Recognition</button>
+        </div>
+        <div class="ticket-stat-row" id="taskStatRow"></div>
+        <div class="ticket-list" id="taskTicketList"></div>
+      </div>
+
+      <div class="dp-subtab-panel" data-subtab-panel="recovery" hidden>
+        <div class="ticket-stat-row" id="recoveryStatRow"></div>
+        <div class="ticket-list" id="recoveryTicketList"></div>
+      </div>
+
+      <div class="dp-subtab-panel" data-subtab-panel="alerts" hidden>
+        <div class="driver-list" id="driverList"></div>
+      </div>
+
+    </div>
+    <div id="taskTypePanelContent" hidden></div>
+    </div>
+  </aside>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
